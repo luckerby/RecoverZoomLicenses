@@ -1,6 +1,6 @@
 # CONSTANTS
-$API_KEY = 'TOBEPASSEDASPARAM'
-$API_Secret = 'TOBEPASSEDASPARAM'
+$API_KEY = 'TO_BE_PASSED_AS_PARAM'
+$API_Secret = 'TO_BE_PASSED_AS_PARAM'
 
 function BuildZoomJWTtoken([string]$API_KEY,
     [string]$API_Secret,
@@ -47,7 +47,7 @@ do {
         $global:response = Invoke-RestMethod @params
     }
     catch{
-        Write-Host "Rest call threw exception: ($_.Exception)"
+        Write-Host "REST call threw exception: ($_.Exception)"
         $global:exc = $_
         exit
     }
